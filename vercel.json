@@ -21,11 +21,6 @@
       "dest": "/client/dist/$1"
     }
   ],
-  "functions": {
-    "server/index.ts": {
-      "runtime": "vercel/node@18.x"
-    }
-  },
   "env": {
     "NODE_ENV": "production"
   }
