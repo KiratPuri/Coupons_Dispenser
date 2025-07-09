@@ -1,0 +1,33 @@
+{
+  "name": "CouponAPI",
+  "description": "REST API for unique coupon code distribution with admin dashboard",
+  "repository": "https://github.com/yourusername/coupon-api",
+  "logo": "https://cdn.iconscout.com/icon/free/png-256/coupon-1659815-1409043.png",
+  "keywords": ["nodejs", "express", "api", "coupon", "react", "admin"],
+  "image": "heroku/nodejs",
+  "stack": "heroku-22",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "basic"
+    }
+  },
+  "env": {
+    "NODE_ENV": {
+      "description": "Node environment",
+      "value": "production"
+    },
+    "PORT": {
+      "description": "Port for the application",
+      "value": "5000"
+    }
+  },
+  "scripts": {
+    "postdeploy": "echo 'CouponAPI deployed successfully!'"
+  }
+}
